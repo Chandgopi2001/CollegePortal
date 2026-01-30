@@ -72,6 +72,7 @@ def admission_view(request):
             gender=request.POST.get('gender'),
             department=request.POST.get('department'),
         )
+        print(request.POST)
         return redirect('admission_success')
 
     return render(request, 'admission.html')
